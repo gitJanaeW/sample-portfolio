@@ -21,6 +21,14 @@ a{
     text-decoration: none;
 }
 
+p{
+    line-height: 1.5;
+}
+
+h3, h3, h4{
+    margin: 8px 0;
+}
+
 /* Header styling */
 .header{
     display: flex;
@@ -49,3 +57,20 @@ a{
 }
 
 /* Hero section */
+.hero{
+    background-color: rgb(70, 70, 70);
+    padding: 60px 0 25px 20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero h1{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tagline-box{
+    background-color: darkgray;
+    padding: 5px 40px 5px 5px;
+}
