@@ -1,0 +1,49 @@
+/* General Document Styling */
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #EBEBEB;
+}
+
+ul, li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Header styling */
+    /* Need to figure out nav line */
+.header{
+    background-color: #829CD0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #EBEBEB;
+}
+
+.header ul, li{
+    display: flex;
+    margin: 0 30px;
+    align-items:flex-end;
+}
+
+.header a{
+    color: #EBEBEB;
+}
+
+.name{
+    background-color: #20368F;
+    padding: 15px 30px 15px 85px;
+    margin: 30px 0 20px 0;
+}
+
+/* Hero section */
+.hero{
+    background-image: url(https://thumbs.dreamstime.com/b/modern-colorful-blue-wave-wide-banner-background-abstract-design-web-texture-header-website-vector-graphic-pattern-235110595.jpg);
+}
