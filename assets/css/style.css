@@ -25,10 +25,6 @@ p{
     line-height: 1.5;
 }
 
-h3, h3, h4{
-    margin: 8px 0;
-}
-
 /* Header styling */
 .header{
     display: flex;
@@ -73,4 +69,24 @@ h3, h3, h4{
 .tagline-box{
     background-color: darkgray;
     padding: 5px 40px 5px 5px;
+}
+
+/* MAIN BODY / SUBHEADING STYLING */
+/* Subheading styling */
+.body-block{
+    display: flex;
+    margin: 20px 0;
+}
+.title-block{
+    border-right: 3px solid black;
+    text-align: right;
+    width: 200px;
+    padding: 30px;
+    font-size:xx-large;
+}
+
+/* Main body styling */
+.section-content{
+    /* This will have to change in media query */
+    width: 80%;
 }
