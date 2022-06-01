@@ -65,7 +65,6 @@ p{
 
 .hero h1{
     display: flex;
-    justify-content: flex-end;
 }
 
 .tagline-box{
@@ -81,7 +80,7 @@ p{
 .title-block{
     border-right: 3px solid black;
     text-align: right;
-    width: 200px;
+    width: 13ch;
     padding: 30px;
     font-size:xx-large;
     /* margin: auto;  I'm trying to use margin auto to make all of the title blocks more flexible, but it isn't working */
@@ -133,21 +132,16 @@ p{
     padding: auto 37px auto 37px;
 }
 
-/* .portfolios div:not(:first-child){
-    width: 200px;
-} */
-
 
 /* Contact Me section */
-/* Something isn't working here */
-#contact{
+.contact-list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
 }
-#contact ul, .contact li{
-    padding: 0px;
-    color:rgb(70, 70, 70);
-    margin: 5px;
+
+.contact-list li a{
+    color: black;
+
 }
