@@ -31,8 +31,10 @@ p{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 25px 25px 0;
+    padding: 10px 25px 10px 0;
     background-color: darkgray;
+    position: sticky;
+    top: 0;
 }
 
 .header-ul, .header-li{
@@ -71,11 +73,10 @@ p{
     padding: 5px 40px 5px 5px;
 }
 
-/* MAIN BODY / SUBHEADING STYLING */
 /* Subheading styling */
 .body-block{
     display: flex;
-    margin: 20px 0;
+    margin: 20px 15px;
 }
 .title-block{
     border-right: 3px solid black;
@@ -83,10 +84,70 @@ p{
     width: 200px;
     padding: 30px;
     font-size:xx-large;
+    /* margin: auto;  I'm trying to use margin auto to make all of the title blocks more flexible, but it isn't working */
 }
 
-/* Main body styling */
+/* MAIN BODY STYLING */
 .section-content{
     /* This will have to change in media query */
     width: 80%;
+    margin: 10px 0 10px 15px;
+    padding: 5px;
+
+}
+
+/* About Me section */
+
+
+/* My Work section */
+.portfolio-borders{
+    border: 10px solid black;
+    margin: 10px 0 10px 15px;
+    padding: 175px 0 50px 0;
+}
+
+.portfolio-tools{
+    color: #EBEBEB;
+    background-color: black;
+    display: inline-block;
+    padding: 8px;
+    max-width: 23ch;
+}
+
+.portfolio-big{
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+}
+
+.portfolio-rest{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-rest > *{
+    flex: 1 1 45%;
+}
+
+.portfolio-small{
+    padding: auto 37px auto 37px;
+}
+
+/* .portfolios div:not(:first-child){
+    width: 200px;
+} */
+
+
+/* Contact Me section */
+/* Something isn't working here */
+#contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#contact ul, .contact li{
+    padding: 0px;
+    color:rgb(70, 70, 70);
+    margin: 5px;
 }
