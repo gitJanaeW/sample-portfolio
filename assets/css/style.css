@@ -10,7 +10,7 @@
 
 body{
     font-family: "Monserrat", sans-serif;
-    background-color: #EBEBEB;
+    background-color: #f0f0f0;
 }
 
 ul, li{
@@ -27,14 +27,23 @@ p{
 
 /* Header styling */
 .header{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 25px 10px 0;
-    background-color: darkgray;
+    margin-bottom: -85px;
+    box-shadow: 0px 0px 6px rgb(69, 66, 66);
     position: sticky;
     top: 0;
+    background-image: url(/assets/images/hero.svg);
+    /* Image from: Harryarts on Vecteezy: https://www.vecteezy.com/vector-art/693772-geometric-technology-banner-background-illustration */
+    background-size: 105%;
+}
+
+.header-filter{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px 10px 0;
+    background-color: rgba(204, 150, 69, 0.8);
 }
 
 .header-ul, .header-li{
@@ -56,8 +65,11 @@ p{
 
 /* Hero section */
 .hero{
-    background-color: rgb(70, 70, 70);
-    padding: 60px 0 25px 20px;
+    background-image: url(/assets/images/hero.svg);
+    /* Image from: Harryarts on Vecteezy: https://www.vecteezy.com/vector-art/693772-geometric-technology-banner-background-illustration */
+    background-position: bottom;
+    background-size: 105%;
+    padding: 120px 0 40px 30px;
     margin-bottom: 15px;
     display: flex;
     justify-content: flex-end;
@@ -68,8 +80,12 @@ p{
 }
 
 .tagline-box{
-    background-color: darkgray;
+    background-color: rgb(70, 70, 70);
     padding: 5px 40px 5px 5px;
+}
+
+.tagline-box h2{
+    color: #EBEBEB;
 }
 
 /* Subheading styling */
