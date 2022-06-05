@@ -1,7 +1,24 @@
-/* Font import */
+/* COLOR VARIABLES */
+:root{
+    --primary-color: rgba(204, 150, 69, 0.8);
+    --secondary-color: rgb(69, 66, 66);
+    --title-color: #EBEBEB;
+    --background: #f0f0f0;
+}
+
+/* FONT IMPORT */
 @import url('https://fonts.googleapis.com/css?family=Monserrat:500');
 
-/* General Page Styling */
+
+/* BETTER SCROLLING */
+html{
+    /* scroll-behaviour: smooth didn't work on my browser but I hear it's still in development.
+    Maybe that's why? Can you tell me if it works on your computer? Trying to figure out the bug */
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+/* GENERAL PAGE */
 *{
     box-sizing: border-box;
     margin: 0;
@@ -10,7 +27,7 @@
 
 body{
     font-family: "Monserrat", sans-serif;
-    background-color: #f0f0f0;
+    background-color: var(--background);
 }
 
 ul, li{
@@ -21,15 +38,21 @@ a{
     text-decoration: none;
 }
 
-p{
+p, li{
     line-height: 1.5;
+    font-size: 20px;
 }
 
-/* Header styling */
+p{
+    padding-left: 18px;
+}
+
+/* HEADING */
 .header{
     margin-bottom: -85px;
-    box-shadow: 0px 0px 6px rgb(69, 66, 66);
+    box-shadow: 0px 0px 6px var(--secondary-color);
     position: sticky;
+    z-index: 9999;
     top: 0;
     background-image: url(/assets/images/hero.svg);
     /* Image from: Harryarts on Vecteezy: https://www.vecteezy.com/vector-art/693772-geometric-technology-banner-background-illustration */
@@ -43,7 +66,7 @@ p{
     align-items: center;
     justify-content: space-between;
     padding: 15px 25px 10px 0;
-    background-color: rgba(204, 150, 69, 0.8);
+    background-color: var(--primary-color);
 }
 
 .header-ul, .header-li{
@@ -54,16 +77,15 @@ p{
 .name{
     display: inline-block;
     padding: 5px 15px 5px 70px ;
-    background-color: rgb(70, 70, 70);
+    background-color: var(--secondary-color);
 }
-
 
 .header a, h1{
     /* When we change font-size, it may make more sense to separate these selectors into 2 selectors */
-    color: #EBEBEB;
+    color: var(--title-color);
 }
 
-/* Hero section */
+/* HERO SECTION */
 .hero{
     background-image: url(/assets/images/hero.svg);
     /* Image from: Harryarts on Vecteezy: https://www.vecteezy.com/vector-art/693772-geometric-technology-banner-background-illustration */
@@ -75,64 +97,83 @@ p{
     justify-content: flex-end;
 }
 
+
 .hero h1{
     display: flex;
 }
 
 .tagline-box{
-    background-color: rgb(70, 70, 70);
+    background-color: var(--secondary-color);
     padding: 5px 40px 5px 5px;
 }
 
 .tagline-box h2{
-    color: #EBEBEB;
+    color: var(--title-color);
 }
 
-/* Subheading styling */
+/* LEFT SUBHEADERS */
 .body-block{
     display: flex;
     margin: 20px 15px;
 }
+
 .title-block{
     border-right: 3px solid black;
     text-align: right;
     width: 13ch;
     padding: 30px;
     font-size:xx-large;
-    /* margin: auto;  I'm trying to use margin auto to make all of the title blocks more flexible, but it isn't working */
 }
 
-/* MAIN BODY STYLING */
+/* GENERAL SECTION GUIDELINES */
 .section-content{
     /* This will have to change in media query */
     width: 80%;
     margin: 10px 0 10px 15px;
     padding: 5px;
-
 }
 
-/* About Me section */
+.section-content li{
+    padding: 0 10px 0 10px;
+}
 
+/* MY WORK SECTION */
 
-/* My Work section */
+/* Styling boxes, text and images */
 .portfolio-borders{
     border: 10px solid black;
+    background-color: var(--primary-color);
     margin: 10px 0 10px 15px;
-    padding: 175px 0 50px 0;
+    height: 300px;
 }
 
-.portfolio-tools{
-    color: #EBEBEB;
+.portfolio-tools, .portfolio-tools-big{
+    color: var(--title-color);
     background-color: black;
     display: inline-block;
     padding: 8px;
     max-width: 23ch;
 }
 
+.portfolio-tools-big, .h4-big{
+    position: relative;
+    z-index: 2;
+    bottom: 100px;
+    padding-left: 20px;
+}
+
 .portfolio-big{
     display: flex;
     flex-basis: 100%;
     flex-direction: column;
+    background-size: 150%;
+    height: 400px;
+}
+
+.portfolio-tools, .h4{
+    position: relative;
+    bottom: 110px;
+    padding-left: 10px;
 }
 
 .portfolio-rest{
@@ -148,8 +189,20 @@ p{
     padding: auto 37px auto 37px;
 }
 
+.img-fit{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 35%;
+    z-index: 1;
+}
 
-/* Contact Me section */
+/* Styling filter overlay */
+.img-fit:hover{
+    opacity: 100%;
+}
+
+/* CONTACT ME SECTION */
 .contact-list{
     display: flex;
     flex-wrap: wrap;
@@ -158,6 +211,5 @@ p{
 }
 
 .contact-list li a{
-    color: black;
-
+    color: var(--secondary-color);
 }
