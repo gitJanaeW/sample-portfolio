@@ -210,12 +210,25 @@ nav a{
     padding: auto 37px auto 37px;
 }
 
-.img-fit{
+.img-fit, .img-fit-me{
     width: 100%;
     height: 100%;
     object-fit: cover;
     opacity: 35%;
     z-index: 1;
+}
+
+.portfolio-borders-me{
+    margin: 10px auto;
+    border: 10px solid var(--secondary-color);
+    background-color: var(--primary-color);
+    width: 70%;
+    height: 50vh;
+}
+
+.img-fit-me{
+    opacity: 75%;
+    object-position: 0 20%;
 }
 
 /* Styling filter overlay */
@@ -245,4 +258,85 @@ nav a{
 
 .contact-list li a:hover{
     border-bottom: 3px solid var(--secondary-color);
+}
+
+@media screen and (max-width: 865px){
+
+.header-filter, .hero{
+    justify-content: center;
+}
+
+.hero{
+    padding: 120px auto 40px auto;
+}
+
+.name, .tagline-box{
+    padding: 5px 15px;
+}
+
+nav{
+    margin: 8px;
+}
+
+.portfolio-borders-me{
+    height: 30vh;
+}
+    
+}
+
+@media screen and (max-width: 665px){
+    .header-filter{
+        flex-direction: column;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .h4-big, .portfolio-tools-big{
+        bottom: 150px;
+    }
+
+    .img-fit{
+        min-width: 165px;
+    }
+
+    .title-block{
+        padding: 30px 20px 30px 0;
+        max-width: 130px;
+    }
+
+    h3{
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 555px){
+    .portfolio-borders-me{
+        height: 20vh;
+        margin-bottom: 50px;
+    }
+
+    p{
+        font-size: 17px;
+    }
+
+    .title-block{
+        margin: auto;
+        text-align: center;
+        padding: 0 30px;
+        border-right: none;
+        border-bottom: 3px solid var(--secondary-color)
+    }
+
+    li{
+        flex-direction: column;
+        align-items: center;
+    }
 }
