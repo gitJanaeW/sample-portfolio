@@ -105,7 +105,7 @@ nav a{
 
 /* HERO SECTION */
 .hero{
-    background-image: url(/assets/images/hero.svg);
+    background-image: url(../images/hero.svg);
     /* Image from: Harryarts on Vecteezy: https://www.vecteezy.com/vector-art/693772-geometric-technology-banner-background-illustration */
     background-position: bottom;
     background-size: 105%;
