@@ -67,7 +67,7 @@ p{
     position: sticky;
     z-index: 9999;
     top: 0;
-    background-image: url(/assets/images/hero.svg);
+    background-image: url(../images/hero.svg);
     /* Image from: Harryarts on Vecteezy: https://www.vecteezy.com/vector-art/693772-geometric-technology-banner-background-illustration */
     background-size: 105%;
 }
